@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -37,6 +39,7 @@ def self.find_or_create_by_name(name)
 end
 
 def self.alphabetical
+  binding.pry
   self.all.sort_by{|a, b| a <=> b}
 end
 
