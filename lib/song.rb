@@ -44,7 +44,8 @@ end
 
 def self.new_from_filename(file_name)
   info = file_name.split(/[-.]/)
-  
+  artist_name = info[0]
+  name = info[1]
 end
 
 end
