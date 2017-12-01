@@ -44,11 +44,14 @@ end
 
 def self.new_from_filename(file_name)
   info = file_name.split(" - ")
+  self.new_by_name(info[1].split("."))[0])
+
+#  info = file_name.split(" - ")
 #  binding.pry
-  song = Song.new
-  song.artist_name = info[0]
-  song.name = (info[1].split("."))[0]
-  song
+#  song = Song.new
+#  song.artist_name = info[0]
+#  song.name = (info[1].split("."))[0]
+#  song
 end
 
 end
