@@ -43,7 +43,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(file_name)
-  info = file_name.split(/[-.]/)
+  info = file_name.split(" - ")
   binding.pry
   song = Song.new
   song.artist_name = info[0]
