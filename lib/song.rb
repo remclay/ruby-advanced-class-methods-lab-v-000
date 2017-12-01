@@ -55,7 +55,7 @@ class Song
     song = self.new
     song.artist_name = info[0]
     song.name = (info[1].split("."))[0]
-    self.save
+    song.save
   end
 
 end
