@@ -40,7 +40,7 @@ end
 
 def self.alphabetical
   binding.pry
-  self.all.sort_by{|a, b| a <=> b}
+  self.all.sort_by{|song| song.name}
 end
 
 
