@@ -43,7 +43,8 @@ def self.alphabetical
 end
 
 def self.new_from_filename(file_name)
-  arr = file_name.split(/[-.]/)
+  info = file_name.split(/[-.]/)
+  
 end
 
 end
